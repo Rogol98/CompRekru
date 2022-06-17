@@ -24,6 +24,7 @@ public class DeviceLocationService {
     }
 
 
-
-
+    public DeviceLocation addDeviceLocation(DeviceLocation deviceLocation) {
+        return deviceLocationRepository.save(deviceLocation);
+    }
 }
