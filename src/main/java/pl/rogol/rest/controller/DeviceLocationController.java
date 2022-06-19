@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import pl.rogol.rest.model.DeviceLocation;
 import pl.rogol.rest.service.DeviceLocationService;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -30,7 +31,7 @@ public class DeviceLocationController {
 
 
   @PostMapping("/device-locations")
-  public DeviceLocation addDeviceLocation(@RequestBody @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) DeviceLocation deviceLocation){
+  public DeviceLocation addDeviceLocation(@Valid @RequestBody DeviceLocation deviceLocation){
     return dLService.addDeviceLocation(deviceLocation);
   }
 
