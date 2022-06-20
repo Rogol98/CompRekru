@@ -15,11 +15,11 @@ public class DeviceLocationService {
         this.deviceLocationRepository = deviceLocationRepository;
     }
 
-    public List<DeviceLocation> getLocationsOfDevices(){
+    public List<DeviceLocation> getLocationsOfDevices() {
         return deviceLocationRepository.findAll();
     }
 
-    public List<DeviceLocation> getDeviceLocations(int deviceID){
+    public List<DeviceLocation> getDeviceLocations(int deviceID) {
         return deviceLocationRepository.findByDeviceID(deviceID);
     }
 

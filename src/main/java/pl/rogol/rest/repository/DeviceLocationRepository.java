@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface DeviceLocationRepository extends JpaRepository<DeviceLocation, Long> {
 
-   List<DeviceLocation> findByDeviceID(int deviceID);
+    List<DeviceLocation> findByDeviceID(int deviceID);
 
 }
