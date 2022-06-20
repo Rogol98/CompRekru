@@ -9,7 +9,7 @@ public class LeafyTree extends Tree {
     Logger logger = LoggerFactory.getLogger(LeafyTree.class);
 
     public LeafyTree(double heightInMeters, double widthInMeters, double trunkThicknessInMeters, double growRate,
-                     boolean isHydrated, List<Branch> branches, Logger logger) {
+                     boolean isHydrated, List<Branch> branches) {
         super(heightInMeters, widthInMeters, trunkThicknessInMeters, growRate, isHydrated, branches);
     }
 

@@ -9,7 +9,7 @@ public class Conifer extends Tree {
     Logger logger = LoggerFactory.getLogger(Conifer.class);
 
     public Conifer(double heightInMeters, double widthInMeters, double trunkThicknessInMeters, double growRate,
-                   boolean isHydrated, List<Branch> branches, Logger logger) {
+                   boolean isHydrated, List<Branch> branches) {
         super(heightInMeters, widthInMeters, trunkThicknessInMeters, growRate, isHydrated, branches);
     }
 
